@@ -1,0 +1,31 @@
+/* Importando estilos base do Tailwind */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Estilos básicos para links */
+a {
+  color: var(--color-wine);
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--color-wine-dark);
+  }
+}
+
+/* Definindo cores de fundo padrão e cor do texto para a página */
+body {
+  background-color: #d4d2d2;
+  color: var(--color-black);
+  @apply font-sans;
+  line-height: 1.6;
+
+}
+
+/* Estilos para cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-wine);
+}
+
+/* Caso queira outros estilos globais, adicione-os aqui */
