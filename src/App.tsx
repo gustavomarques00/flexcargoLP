@@ -2,6 +2,7 @@ import "./layout/globals.css";
 import Container from "./components/Container";
 import Navbar from "./components/Navbar";
 import MainBanner from "./components/MainBanner";
+import About from "./components/About";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Navbar />
       <MainBanner />
       <Container>
-        {/* Todo o seu conteúdo aqui será limitado e centralizado */}
+        <About />
         
         
         <footer>OUTRA SESSÃO</footer>

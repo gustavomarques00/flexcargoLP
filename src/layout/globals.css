@@ -16,7 +16,6 @@ a {
 
 /* Definindo cores de fundo padrão e cor do texto para a página */
 body {
-  background-color: #d4d2d2;
   color: var(--color-black);
   @apply font-sans;
   line-height: 1.6;
@@ -26,6 +25,10 @@ body {
 /* Estilos para cabeçalhos */
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-wine);
+}
+
+.shadow-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Caso queira outros estilos globais, adicione-os aqui */
