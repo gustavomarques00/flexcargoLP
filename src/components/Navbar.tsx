@@ -4,7 +4,7 @@ import React from 'react';
 const Navbar: React.FC = () => {
   return (
     <div className="w-full top-0 z-50 align-middle bg-wine-dark">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex items-center justify-between">
+      <div className="container mx-auto sm:px-6 lg:px-8 py-8 flex items-center justify-between">
         
         {/* Logo à esquerda */}
         <div className='text-xl'>
