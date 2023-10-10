@@ -38,11 +38,11 @@ function About() {
           </div>
 
           {/* Imagem ou Ilustração - Lado Direito */}
-          <div className='w-1/2'>
+          <div className='w-1/2 justify-center flex'>
             <img
               src='/images/ilustration.jpg'
               alt='Descrição da imagem'
-              className='rounded-lg shadow-lg'
+              className='rounded-lg shadow-lg h-64 '
             />
           </div>
         </div>
