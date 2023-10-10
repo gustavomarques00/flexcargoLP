@@ -3,6 +3,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
 /* Estilos básicos para links */
 a {
   color: var(--color-wine);

@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section className='bg-white py-16'>
+    <section className='py-16'>
       <div className='container mx-auto px-4'>
         {/* Título da Seção */}
         <h2 className='text-4xl font-bold text-wine mb-8 text-center'>
@@ -60,8 +60,8 @@ function About() {
         </div>
 
         {/* Incentivo à Ação */}
-        <div className='text-center mt-8'>
-          <p className='text-xl mb-6'>
+        <div className='text-center '>
+          <p className='text-xl mb-6 '>
             Interessado em nossos serviços? Gostaríamos muito de ouvir de você!
           </p>
           <a
