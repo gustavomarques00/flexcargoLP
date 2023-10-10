@@ -1,4 +1,6 @@
 import ContactForm from "./ContactForm";
+import EmailComponent from "./EmailComponent";
+import TelefoneComponent from "./PhoneComponent";
 import SectionTitle from "./SectionTitle";
 
 function Contact() {
@@ -23,28 +25,25 @@ function Contact() {
 
             <ul className='space-y-4 text-black'>
               <li>
-                <strong>Email: </strong>
-                <span className='transition duration-300 ease-in-out hover:text-wine'>
-                  contato@flexcargo.com.br
-                </span>
+                <EmailComponent />
               </li>
               <li>
-                <strong>Telefone: </strong>
-                <span className='transition duration-300 ease-in-out hover:text-wine'>
-                  (13) 1234-5678
-                </span>
+                <TelefoneComponent />
               </li>
               <li>
                 <strong>Endereço Matriz: </strong>
-                <span className='transition duration-300 ease-in-out hover:text-wine'>
-                  Rua dos Transportes, Santos - SP
-                </span>
-              </li>
-              <li>
-                <strong>Filial: </strong>
-                <span className='transition duration-300 ease-in-out hover:text-wine'>
-                  Avenida Logística, Fortaleza - CE
-                </span>
+                <a
+                  href='https://www.google.com/maps/search/?api=1&query=R.+Barão+de+Paranapiacaba,+233+-+Sala+1101+-+Centro,+Santos+-+SP,+11050-251'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='transition duration-300 ease-in-out hover:text-wine'
+                  onClick={() => {
+                    // Alguma lógica adicional aqui, se necessário
+                  }}
+                >
+                  R. Barão de Paranapiacaba, 233 - Sala 1101 - Centro, Santos -
+                  SP, 11050-251
+                </a>
               </li>
             </ul>
           </div>
