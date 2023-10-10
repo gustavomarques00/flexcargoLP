@@ -1,12 +1,11 @@
 import ContactForm from "./ContactForm";
+import SectionTitle from "./SectionTitle";
 
 function Contact() {
   return (
-    <section className='bg-light-gray py-12'>
+    <section className='bg-light-gray py-12' id='contact'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <h2 className='text-3xl font-extrabold text-wine mb-8 text-center'>
-          Entre em Contato
-        </h2>
+        <SectionTitle title='Entre em Contato' />
 
         <p className='text-center mb-8 leading-5'>
           Tem alguma pergunta? Gostaria de solicitar um orçamento? Entre em
@@ -20,9 +19,8 @@ function Contact() {
 
           {/* Detalhes de Contato */}
           <div className='bg-white p-8 rounded shadow-lg max-w-md mx-auto'>
-            <h3 className='text-2xl font-bold text-wine mb-6 text-center'>
-              Outras Formas de Contato
-            </h3>
+            <SectionTitle title='Outras Formas de Contato' />
+
             <ul className='space-y-4 text-black'>
               <li>
                 <strong>Email: </strong>

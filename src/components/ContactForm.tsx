@@ -1,4 +1,5 @@
 import { useState, ChangeEvent, FormEvent } from "react";
+import SectionTitle from "./SectionTitle";
 
 // Tipos
 type FormData = {
@@ -51,9 +52,8 @@ export default function ContactForm() {
 
   return (
     <div className='bg-white p-8 rounded shadow-lg max-w-lg mx-auto w-full'>
-      <h2 className='text-2xl font-bold text-wine mb-6 text-center'>
-        Canal de Comunicação
-      </h2>
+      <SectionTitle title="Canal de Comunicação" />   
+        
       <form className='space-y-6' onSubmit={handleSubmit}>
         <div>
           <input

@@ -6,6 +6,8 @@ import About from "./components/About";
 import Service from "./components/Service";
 import FAQSection from "./components/FAQSection";
 import Contact from "./components/Contact";
+import { Footer } from "./components/Footer";
+import { CTA } from "./components/CTA";
 
 function App() {
   return (
@@ -15,12 +17,13 @@ function App() {
       <Container>
         <About />
         <Service />
+      </Container>
+      <CTA />
+      <Container>
         <FAQSection />
         <Contact />
-        
-        
-        <footer>OUTRA SESSÃO</footer>
       </Container>
+      <Footer />
     </>
   );
 }

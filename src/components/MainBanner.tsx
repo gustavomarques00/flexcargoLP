@@ -18,7 +18,7 @@ function MainBanner() {
           </h2>
 
           <a
-            href='#contato'
+            href='#contact'
             className=' text-wine bg-white px-6 py-3 rounded-lg shadow hover:bg-wine-light transition-colors'
           >
             Entre em Contato Agora

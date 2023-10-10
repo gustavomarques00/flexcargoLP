@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import SectionTitle from './SectionTitle';
 
 const FAQSection = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -35,11 +36,10 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-12">
+    <section className="py-12" id='FAQ'>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-wine mb-8 text-center">
-          Perguntas Frequentes
-        </h2>
+        <SectionTitle title='Perguntas Frequentes' />
+        
         <div className="bg-white p-6 rounded shadow-lg">
           {questionsAndAnswers.map((item, index) => (
             <div key={index} className="mb-4">
