@@ -7,7 +7,7 @@ function Contact() {
   return (
     <section className='bg-light-gray py-12' id='contact'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <SectionTitle title='Entre em Contato' />
+        <SectionTitle title='Entre em Contato' className='mb-4 md:mb-8' />
 
         <p className='text-center mb-8 leading-5'>
           Tem alguma pergunta? Gostaria de solicitar um orçamento? Entre em
@@ -15,13 +15,16 @@ function Contact() {
           canais de atendimento.
         </p>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
           {/* Formulário */}
           <ContactForm />
 
           {/* Detalhes de Contato */}
-          <div className='bg-white p-8 rounded shadow-lg max-w-md mx-auto'>
-            <SectionTitle title='Outras Formas de Contato' />
+          <div className='bg-white p-4 md:p-8 rounded shadow-lg max-w-md mx-auto'>
+            <SectionTitle
+              title='Outras Formas de Contato'
+              className='mb-4 md:mb-8'
+            />
 
             <ul className='space-y-4 text-black'>
               <li>
@@ -37,9 +40,6 @@ function Contact() {
                   target='_blank'
                   rel='noopener noreferrer'
                   className='transition duration-300 ease-in-out hover:text-wine'
-                  onClick={() => {
-                    // Alguma lógica adicional aqui, se necessário
-                  }}
                 >
                   R. Barão de Paranapiacaba, 233 - Sala 1101 - Centro, Santos -
                   SP, 11050-251

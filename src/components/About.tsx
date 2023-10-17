@@ -5,7 +5,7 @@ function About() {
     <section className='pt-12 md:pt-16' id='about'>
       <div className='container mx-auto px-4'>
         {/* Título da Seção */}
-        <SectionTitle title="Sobre a Flexcargo" />
+        <SectionTitle title='Sobre a Flexcargo' />
 
         {/* Texto Descritivo */}
         <p className='text-lg md:text-xl mb-6'>
@@ -20,7 +20,7 @@ function About() {
         </p>
 
         {/* Valores da Empresa */}
-        <div className='my-8 flex flex-col md:flex-row justify-center'>
+        <div className='my-8 flex flex-col md:flex-row justify-center items-center'>
           {/* Valores - Lado Esquerdo */}
           <div className='w-full text-center md:text-left md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0'>
             <h3 className='text-2xl md:text-3xl font-semibold text-wine mb-4'>
@@ -38,7 +38,7 @@ function About() {
           </div>
 
           {/* Imagem ou Ilustração - Lado Direito */}
-          <div className='w-full md:w-1/2 justify-center md:block hidden'>
+          <div className='w-full md:w-1/2 flex justify-center'>
             <img
               src='/images/ilustration.jpg'
               alt='Descrição da imagem'

@@ -1,8 +1,8 @@
 export const Footer = () => {
   return (
-    <footer className='bg-wine mt-16 py-12'>
+    <footer className='bg-wine mt-16 py-8 md:py-12'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className='flex flex-col md:flex-row justify-between items-center mb-8 md:mb-0'>
+        <div className='flex flex-col md:flex-row justify-between items-center mb-8 md:mb-0 space-y-4 md:space-y-0'>
           {/* Logo e nome da empresa */}
           <div className='flex items-center mb-4 md:mb-0'>
             <img src='/logo.svg' alt='Logo Flexcargo' className='h-8 mr-3' />
@@ -10,7 +10,7 @@ export const Footer = () => {
           </div>
 
           {/* Links rápidos */}
-          <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-8'>
+          <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-8 mt-4 md:mt-0'>
             <a href='#home' className='text-white hover:text-wine-light'>
               Home
             </a>
@@ -30,13 +30,13 @@ export const Footer = () => {
         </div>
 
         {/* Barra inferior do footer */}
-        <div className='flex flex-col md:flex-row justify-between mt-4 items-center'>
-          <div className='text-white mb-4 md:mb-0'>
+        <div className='flex flex-col md:flex-row justify-between mt-8 items-center space-y-4 md:space-y-0'>
+          <div className='text-white'>
             © {new Date().getFullYear()} Flexcargo. Todos os direitos
             reservados.
           </div>
 
-          <div className='text-white'>
+          <div className='text-white mt-4 md:mt-0'>
             Desenvolvido por{" "}
             <a
               href='https://www.linkedin.com/in/gustavo-marques-00/'
@@ -46,7 +46,6 @@ export const Footer = () => {
             >
               Gustavo Marques de Lima
             </a>
-            .
           </div>
         </div>
       </div>

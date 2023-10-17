@@ -1,5 +1,6 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import SectionTitle from "./SectionTitle";
+import axios from "axios";
 
 // Tipos
 type FormData = {
@@ -46,14 +47,27 @@ export default function ContactForm() {
 
     if (Object.keys(validationErrors).length === 0) {
       // Aqui você pode processar o envio do formulário.
-      console.log("Dados do formulário:", formData);
+      axios
+        .post("/api/sendMail", formData)
+        .then((response) => {
+          console.log(response.data);
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+          alert("E-mail enviado com sucesso!");
+        })
+        .catch((error) => {
+          console.error("Erro ao enviar e-mail:", error);
+        });
     }
   };
 
   return (
     <div className='bg-white p-8 rounded shadow-lg max-w-lg mx-auto w-full'>
-      <SectionTitle title="Canal de Comunicação" />   
-        
+      <SectionTitle title='Canal de Comunicação' />
+
       <form className='space-y-6' onSubmit={handleSubmit}>
         <div>
           <input
