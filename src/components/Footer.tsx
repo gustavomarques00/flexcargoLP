@@ -4,9 +4,8 @@ export const Footer = () => {
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex flex-col md:flex-row justify-between items-center mb-8 md:mb-0 space-y-4 md:space-y-0'>
           {/* Logo e nome da empresa */}
-          <div className='flex items-center mb-4 md:mb-0'>
-            <img src='/logo.svg' alt='Logo Flexcargo' className='h-8 mr-3' />
-            <span className='text-white font-bold text-xl'>Flexcargo</span>
+          <div className='flex items-center mb-4 md:mb-0 '>
+            <img src='public\images\flexcargoLogo.png' alt='Logo Flexcargo' className='h-8 mr-3 bg-white rounded' />
           </div>
 
           {/* Links rápidos */}

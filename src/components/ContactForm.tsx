@@ -32,34 +32,39 @@ export default function ContactForm() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-
+  
     // Validação
     const validationErrors: FormErrors = {};
-
+  
     if (!formData.name.trim()) validationErrors.name = "Nome é obrigatório";
     if (!formData.email.trim()) validationErrors.email = "Email é obrigatório";
     else if (!/\S+@\S+\.\S+/.test(formData.email))
       validationErrors.email = "Email inválido";
     if (!formData.message.trim())
       validationErrors.message = "Mensagem é obrigatória";
-
+  
     setErrors(validationErrors);
-
+  
     if (Object.keys(validationErrors).length === 0) {
-      // Aqui você pode processar o envio do formulário.
-      axios
-        .post("/api/sendMail", formData)
-        .then((response) => {
-          console.log(response.data);
-          setFormData({
-            name: "",
-            email: "",
-            message: "",
-          });
+      // Estrutura de dados conforme o backend espera
+      const emailData = {
+        destinatario: formData.email,
+        assunto: `Mensagem de ${formData.name}`,
+        mensagem: formData.message,
+      };
+  
+      //axios.post(process.env.REACT_APP_BACKEND_URL + '/send-email', emailData)
+
+      // Chamada para o endpoint do backend
+      axios.post('http://localhost:3001/send-email', emailData)
+        .then(response => {
+          console.log('E-mail enviado com sucesso:', response.data);
           alert("E-mail enviado com sucesso!");
+          setFormData({ name: "", email: "", message: "" }); // Limpa o formulário
         })
-        .catch((error) => {
+        .catch(error => {
           console.error("Erro ao enviar e-mail:", error);
+          alert("Erro ao enviar e-mail. Por favor, tente novamente mais tarde.");
         });
     }
   };
