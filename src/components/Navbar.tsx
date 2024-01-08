@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
       <div className='container mx-auto sm:px-6 lg:px-8 py-8 flex md:flex-row items-center justify-between'>
         {/* Logo à esquerda */}
         <a href='#home' className='text-xl'>
-          <img src='public\images\flexcargoLogo.png' alt='Logo da Empresa' className='h-12' />
+          <img src='images\flexcargoLogo.png' alt='Logo da Empresa' className='h-12' />
         </a>
 
         {/* Opções de menu ao centro */}
